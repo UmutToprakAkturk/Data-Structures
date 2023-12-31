@@ -51,8 +51,8 @@ int delete(pqueue*p){
             }
             else{
                     swap(&p->data[index],&p->data[2*index]);
+                break;
                 }
-            break;
         }
         p->data[p->cnt+1]=0;//
         return min;
@@ -74,7 +74,7 @@ int main(){
     int i=0;
     int x=0;
     while(i!=-1){
-        scanf("%d\t",&i);
+        scanf("%d",&i);
         if(i!=-1)
             enqueue(p,i);
     }
